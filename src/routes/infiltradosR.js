@@ -21,3 +21,5 @@ router.post('/infiltrados', postInfiltrados)
 router.put('/infiltrados', putInfiltrados)
 router.patch('/infiltrados', patchInfiltrados)
 router.delete('/infiltrados', deleteInfiltrados)
+
+export default router;
