@@ -1,7 +1,7 @@
 import{Router} from 'express'
 import multer from 'multer';
 
-import { deleteInfiltrados, getInfiltrados, patchInfiltrados, postInfiltrados, putInfiltrados } from '../controladores/infiltradosCtrl';
+import { deleteInfiltrados, getInfiltrados, patchInfiltrados, postInfiltrados, putInfiltrados } from '../controladores/infiltradosCtrl.js';
 
 const storage=multer.diskStorage({
     destination:(req,file,cb)=>{

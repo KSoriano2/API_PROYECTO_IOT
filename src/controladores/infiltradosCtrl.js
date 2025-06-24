@@ -1,11 +1,11 @@
-import{conmysql} from '../bd.js'
+import {conmysql} from '../bd.js'
 export const obtenerInfiltrados=(req, res)=>{
     res.send('Lista de Infiltrados');
 }
 
 export const getInfiltrados=async(req,res)=>{
     try{
-        const [result]= await conmysql.query('select *from infiltrados ')
+        const [result]= await conmysql.query('select * from infiltrados ')
         res.json({can:result.length, data:result})
     }catch(error){
         return res.status(500).json({message: "error en el servidor "})
